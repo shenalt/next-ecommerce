@@ -3,8 +3,8 @@
 import Image from "next/image"
 import { useCartStore } from "@/store"
 import formatPrice from "@/util/PriceFormat"
-// import { IoAddCircle, IoRemoveCircle } from 'react-icons/io5'
-import { FaPlusCircle, FaMinusCircle} from 'react-icons/fa'
+import { IoAddCircle, IoRemoveCircle } from 'react-icons/io5'
+//import { FaPlusCircle, FaMinusCircle} from 'react-icons/fa'
 import basket from '@/public/shopping-basket.png'
 import {motion, AnimatePresence} from 'framer-motion'
 import Checkout from "./Checkout"
@@ -75,7 +75,7 @@ export default function Cart(){
                                             })
                                         }
                                     >
-                                        <FaMinusCircle />
+                                        <IoRemoveCircle />
                                     </button>
                                     <button 
                                         onClick={() => 
@@ -88,7 +88,7 @@ export default function Cart(){
                                             })
                                         }
                                     >
-                                        <FaPlusCircle />
+                                        <IoAddCircle />
                                     </button>
                                 </div>
                                 <p className="text-sm">
