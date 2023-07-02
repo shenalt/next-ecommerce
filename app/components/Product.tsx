@@ -10,8 +10,12 @@ export default function Product({
     id, 
     description,
 }: ProductType) {
+    const queryId = id;
     return(
-        <Link href={{pathname: `/product/${id}`, query: {name, image, unit_amount, id, description}}}>
+        <Link 
+            href={{
+                pathname: `/product/${id}`,
+                query: {name, image, unit_amount, queryId, description}}}>
             <div>
                 {/* you can also put w-full for width in classname or Image */}
                 <Image 
